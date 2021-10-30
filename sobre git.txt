@@ -49,5 +49,5 @@ git pull= tras atualizacoes do servidor para minha maquina
 unir branch secundaria para primaria
 1 entrar na bracnh primaria
 git merge = +nome da branch que quero a merge
-atualizei
 
+atualizacao 1.0
