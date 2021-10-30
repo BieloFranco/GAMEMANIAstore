@@ -10,7 +10,7 @@ body, ul, li, p{
 }
 :root{
     --cor-top: rgb(72, 171, 189);
-    --cor-back: rgb(255, 255, 255);
+    --cor-back: rgba(72, 171, 189);
     --cor-texto: rgb(255, 255, 255);
     --cor-hover: rgb(42, 123, 148);
     --cor-fundo: rgb(19, 16, 16);
@@ -30,6 +30,7 @@ body{
     height: 100vh;
     justify-content: center;
     background-color: var(--cor-back);
+    
 }
 #corpo{
     
@@ -38,7 +39,12 @@ body{
     width: 90%;
     height: 100vh;
     margin: 0% 0% 0% 1%;
+    
 
+}
+#logog{
+    max-width: 250px;
+      
 }
 
 a{
@@ -182,6 +188,7 @@ a{
 }
 
 .search{
+    
     height: 20px 20px;
     border:1px solid;
     
@@ -283,6 +290,84 @@ img{
     background-color: var(--cor-primaria);
 
 }
-.formulario{
-    margin: 0 auto;
+.quemsomos{
+    cursor: default;
+    background-color: var(--cor-primaria);
 }
+
+
+
+.backquem{
+    background-color: var(--cor-top);
+    flex-wrap: wrap;
+    scroll-snap-align: start ;
+   
+}
+
+.backquem section{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  
+}
+.backquem p, .txtquem  {
+    
+    font-size: 130%;
+   
+
+}
+.txtquem  {
+    
+    color: var(--cor-texto);
+    font-size: 130%;  
+    padding-top: 10px;
+
+}
+.backquem section:nth-of-type(1){
+    background-image: url("/image/game.png");
+}
+.backquem section:nth-of-type(3){
+    background-image: url("/image/game.png");
+}
+.backquem section:nth-of-type(5){
+    background-image: url("/image/mvv.png");
+    height: 600px;
+    padding-bottom: 200px;
+}
+.backquem section:nth-of-type(7){
+    height: 300px;
+    padding-bottom: 200px;
+    background-image: url("/image/map.png");
+}
+.backquem section:nth-of-type(2){
+    font-size: 160%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-texto);
+}
+section:nth-of-type(4){
+    
+    background-color: var(--cor-fundo);
+    
+}
+section:nth-of-type(6){
+    height: 600px;
+    background-color: var(--cor-fundo);
+}
+section:nth-of-type(8){
+    height: 100px;
+    background-color: var(--cor-fundo);
+}
+.endquem:hover{
+    color: var(--cor-hover);
+}
+
