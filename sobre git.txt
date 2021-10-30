@@ -50,4 +50,4 @@ unir branch secundaria para primaria
 1 entrar na bracnh primaria
 git merge = +nome da branch que quero a merge
 
-atualizacao 1.0
+atualizacao 2.0
