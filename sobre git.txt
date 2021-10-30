@@ -2,3 +2,28 @@ git init = cria arquivo git
 git status = verificar status do meu repositórios 
 git add"" =  adiciona o arquivo
 git add . = adiciona todos os arquivos
+git commit -m "" = comiti no git 
+git config --global user.email ""  = email do git hub usado
+git config --global user.name "" = nome 
+git push = envia na nuvem (git hub)
+git remote add origin = adicionar link do repositorio
+
+
+passo a passo pra adicionar :
+
+primeiro verificar o qeu foi editado--
+
+git status = verificar status do meu repositórios 
+//
+
+git add"" =  adiciona o arquivo
+             ou
+git add . = adiciona todos os arquivos
+//
+fazer um commiti--
+
+git commit -m "" = comiti no git
+//
+por ultimo dar um push para enviar ao git
+
+git push = envia na nuvem (git hub)
