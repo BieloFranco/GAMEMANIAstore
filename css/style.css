@@ -277,7 +277,13 @@ img{
 .rodape{
     background-color: var(--cor-fundo);
     display: block;
-    padding: 20px;
+    padding: 10px;
+    
+}
+.rodape img{
+    padding: 5% 40%;
+    width: 20%;
+
     
 }
 .rodape p{
@@ -381,7 +387,9 @@ img{
 .backquem section:nth-of-type(10){
     background-color: var(--cor-fundo);
 }
-
+.rodapequem ul li a{
+    width: 100px;
+}
 
 
 
