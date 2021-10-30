@@ -51,3 +51,19 @@ unir branch secundaria para primaria
 git merge = +nome da branch que quero a merge
 
 atualizacao 2.0
+git checkout -b *nome que quero dar a nova branch* master(nome da branch que qeuro mesclar)=
+git branch = ver minha situacao
+
+
+
+
+
+
+
+
+
+
+aula sobre o git que usei (Curso de Git e Github COMPLETO 2021 [Iniciantes] + Desafios + Muita Prática
+)
+
+https://www.youtube.com/watch?v=kB5e-gTAl_s
