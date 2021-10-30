@@ -1,0 +1,4 @@
+git init = cria arquivo git
+git status = verificar status do meu repositórios 
+git add"" =  adiciona o arquivo
+git add . = adiciona todos os arquivos

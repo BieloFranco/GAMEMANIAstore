@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>GameMania|lançamentos</title>
+		<!--META tags-->
+		<meta charset="utf-8">
+		<meta name="description" content="Cupons, descontos, promoções e ofertas instantâneas na GameMania. Preços competitivos em mais de 1.000 de itens. Confira todas as ofertas na GameMania. Várias opções de pagamento.">
+		<meta name="keywords" content="Computadores, Monitores, Fontes, Celulares, Tablets ">
+		<meta name="author" content="Gabriel Franco">
+
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        
+</head>
+<body>
+    
+    <div id="corpo">
+        
+        <header class="header">
+
+            <a href="index.html"><img src="image/logo.svg" alt="Ícone GameMania" title="GameMania"></a>
+
+                <nav>
+                    <div class="contato">
+                    <ul class="menu" >
+                        <div>
+                        <li  class="contato">
+                            <a href="#" title="contato">Contato</a>
+                            <ul>
+                                <li>
+                                    <p> tel (11) 9999-999 <br/>
+                                        Email: gamemania@gmail.com<br/>
+                                        Endereço: Rua Patriota, Consolação número 12/SP
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <p>Dark mode</p>
+                        </li>
+                    </ul>
+                    </div>
+
+                </nav>
+          
+        </header>
+        
+        <nav>
+            <div class="dp-menu">
+            <ul>
+                <li>
+                    <a href="#" title="faça seu login ou cadastre-se" >login</a>
+                    <ul>
+                        
+                        <li>
+                            <a href="login.html" title="faça seu login"> faça seu login</a>
+                        </li>
+
+                        <li>
+                            <a href="cadastro.html" title="cadastre-se"> cadastre-se</a>
+                        </li>
+                            
+                    </ul>
+                </li>
+                
+                <li>
+                    <a class="lancamentos" href="lancamentos.html" title="lançamentos" >lançamentos</a>
+                </li>
+
+                <li>
+                    <a href="#" title="quem somos">Quem Somos</a>
+                </li>
+
+                <li>
+                    <form action="#" class="search">
+                        <input type="text" id="texto" placeholder="busque aqui" required>
+                       
+                    </form>
+                </li>
+                <li>
+                    <a href="#" title="categorias" >categorias</a>
+                    <ul>
+                        <li>
+                            <a href="#" title="computadores"> computadores</a>
+                            
+                        <li>
+                            <a href="#" title="celulares"> celulares</a>
+                        </li>
+                        <li>
+                            <a href="#" title="tablets"> tablets</a>
+                        </li>
+                        <li>
+                            <a href="#" title="tablets"> videogames</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+                    
+            </ul>
+
+            </div>
+        </nav>
+        
+        
+
+        <div class="carrousel">
+            
+            <div id="slides">
+
+                <div id="atual" class="anuncios">
+                    <img src="image/item1.png" alt="item1">
+                </div>
+                <div  class="anuncios">
+                    <img src="image/item1png.png" alt="item2">
+                </div>
+                <div  class="anuncios">
+                    <img src="image/item1.png" alt="item3">
+                </div>
+
+
+            </div>
+            
+        </div>
+
+
+        <footer>
+            <div class="rodape">
+            <ul>
+                <li>
+                    <img class="logo" src="image/logo.svg" alt="Ícone GameMania" title="GameMania">
+
+                </li>
+                <li>
+                    <p id="informacao" title="informações de contato">tel (11) 9999-999 <br/>
+                        Email: gamemania@gmail.com<br/>
+                        Endereço: Rua Patriota, Consolação número 12/SP
+
+                    </p>
+                </li>
+
+            </ul>
+            </div>
+            
+
+        </footer>
+
+        <script>
+            const scrollWheel = event => {
+                    if(event.deltaY < 0){
+                        event.target.scrollBy(300, 0)
+                    }
+                    else{
+                        event.target.scrollBy(-300, 0)
+                    }
+                }
+                
+                // document.querySelector("#slides")
+                //   .addEventListener("wheel", scrollWheel)
+                
+                let count = 0
+                setInterval(function(){
+                    count += 400
+                    if(count > 4000) count = 0
+                    document.querySelector("#slides").scrollTo(count, 0)
+                    console.log('moveu')
+                }, 1500)
+    
+                // mouse sobre imagens
+    
+    //            document.querySelector("#slides")
+    //          .addEventListener("wheel", event=>{
+    //                if(event.deltaY>0){
+    //                event.target.scrollBy(200, 0)
+    //            }else{
+    //                event.target.scrollBy(-200, 0)
+    //            }
+    //            })
+        </script>
+</body>
+    
+</html>

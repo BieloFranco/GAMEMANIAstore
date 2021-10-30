@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+   
+    list-style: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica,serif;   
+}
+:root{
+    --cor-top: rgb(72, 171, 189);
+    --cor-back: rgb(255, 255, 255);
+    --cor-texto: rgb(255, 255, 255);
+    --cor-hover: rgb(42, 123, 148);
+    --cor-fundo: rgb(19, 16, 16);
+    --cor-primaria: rgb(17, 138, 48);
+    --cor-rodape: rgb(22, 93, 105);
+
+    
+    
+   
+    
+    
+
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--cor-back);
+}
+#corpo{
+    
+    background-color: var(--cor-back);
+    position: absolute;
+    width: 90%;
+    height: 100vh;
+    margin: 0% 0% 0% 1%;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+.header{
+    height: 150px;
+    background-color: var(--cor-top);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.header nav{
+    padding-right: 100px;
+}
+.menu{
+    display: flex;
+
+}
+.menu li {
+    margin-left: 10px;
+}
+.menu li a{
+
+    display: block;
+    padding: 10px;
+    
+}
+
+.menu ul li:hover ul{
+    display: block;
+    background-color: var(--cor-hover);
+}
+
+.contato a{
+    background-color: var(--cor-fundo);
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.contato ul li{
+    display: inline-block;
+    position: relative;
+}
+.contato ul li a{
+    
+    color: var(--cor-texto);
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+    
+}
+
+.contato ul li a:hover{
+   
+    background-color: var(--cor-hover);
+    display: inline-block;
+    
+    transition: background .3s;   
+}
+
+/*sub menu*/
+.contato ul ul{
+    display: none;
+    left: 0px;
+    position: absolute;
+   
+}
+
+.contato ul li:hover ul{
+    display: block;
+    background-color: var(--cor-hover);
+    
+}
+.contato ul ul{
+   width: 210% ;
+   border-radius: 10px;
+   padding: 1px;
+}
+.contato ul ul li a{
+    display: block; 
+}
+
+
+
+
+
+
+.dp-menu ul{
+    padding: 0% 25%;
+    
+    background-color: var(--cor-fundo);
+  
+}
+
+
+.dp-menu ul li{
+   
+    display: inline-block;
+    position: relative;
+}
+.dp-menu ul li a{
+    
+    color: var(--cor-texto);
+    display: inline-block;
+    padding: 20px;
+    transition: background .3s;
+    
+}
+.dp-menu ul li a:hover{
+   
+    background-color: var(--cor-hover);
+    display: inline-block;
+    
+    transition: background .3s;   
+}
+
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    left: 0px;
+    position: absolute;
+   
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+    background-color: var(--cor-hover);
+    
+}
+.dp-menu ul ul{
+   width: 220% ;
+}
+.dp-menu ul ul li a{
+    display: block; 
+}
+
+.search{
+    height: 20px 20px;
+    border:1px solid;
+    
+    border-radius: 10px;
+    padding: 0px;
+
+}
+.search input, .search button{
+    height: 20px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+
+    
+
+}
+.search button{
+    display: block;
+    cursor: pointer;
+    background: one;
+    height: 20px 20px;
+
+}
+
+
+.carrousel{
+    width: 100%;
+
+}
+#slides{
+    display: flex;
+    overflow-x: hidden ;
+    scroll-snap-type: x mandatory;
+    --webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+}
+.anuncios{
+    flex: none;
+    width: 100%;
+    height: 200px;
+    scroll-snap-align: start;
+    pointer-events: none;
+
+
+}
+#slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left ul{
+    
+    padding: 1px;
+    border:1px solid;
+    transition: background .3s;
+}
+.categorias{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0px;
+    width: 124px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+
+.rodape{
+    background-color: var(--cor-fundo);
+    display: block;
+    padding: 20px;
+    
+}
+.rodape p{
+    color: var(--cor-texto);
+}
+
+/*lancamento html*/
+
+.lancamentos{
+    cursor: default;
+    background-color: var(--cor-primaria);
+
+}
+.formulario{
+    margin: 0 auto;
+}
