@@ -27,3 +27,25 @@ git commit -m "" = comiti no git
 por ultimo dar um push para enviar ao git
 
 git push = envia na nuvem (git hub)
+
+---------------------------------------------
+
+git reflog = historico das minhas alteracoes
+// voltar a uma versão anterior
+git reset --hard =*usar ID da reflog que quero voltar 
+
+git branch = consigo ver minhas branchs
+git brach +nome = crio uma nova branch
+// a verde é a minha atual
+git checkout +nome = mudo de branch
+
+
+colar comando para upar pra nuvem
+git push --set-upstream origin +nome
+
+git pull= tras atualizacoes do servidor para minha maquina
+
+
+unir branch secundaria para primaria
+1 entrar na bracnh primaria
+git merge = +nome da branch que quero a merge
