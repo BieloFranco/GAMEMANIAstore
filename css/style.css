@@ -10,7 +10,7 @@ body, ul, li, p{
 }
 :root{
     --cor-top: rgb(72, 171, 189);
-    --cor-back: rgba(72, 171, 189);
+    --cor-back: rgb(255, 255, 255);
     --cor-texto: rgb(255, 255, 255);
     --cor-hover: rgb(42, 123, 148);
     --cor-fundo: rgb(19, 16, 16);
