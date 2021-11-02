@@ -13,6 +13,8 @@
         
 </head>
 <body>
+
+    <input type="checkbox" name="darkmode" id="darkmode">
     
     <div id="corpo">
         
@@ -37,7 +39,8 @@
                         </li>
                         
                         <li>
-                            <p>Dark mode</p>
+                            
+                            <label class="darkmodelabel" for="darkmode">Darkmode</label>
                         </li>
                     </ul>
                     </div>
@@ -203,7 +206,9 @@
 
             
     </div>
+
     <script>
+
         const scrollWheel = event => {
                 if(event.deltaY < 0){
                     event.target.scrollBy(300, 0)

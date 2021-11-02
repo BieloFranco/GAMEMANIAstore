@@ -9,17 +9,14 @@ body, ul, li, p{
     font-family: Arial, Helvetica,serif;   
 }
 :root{
-    --cor-top: rgb(72, 171, 189);
-    --cor-back: rgb(72, 171, 189);
-    --cor-texto: rgb(255, 255, 255);
-    --cor-hover: rgb(42, 123, 148);
+    --cor-top: rgb(136, 167, 199);
+    --cor-back: rgb(255, 255, 255);
+    --cor-texto: rgb(0, 0, 0);
+    --cor-hover: rgb(56, 100, 143);
     --cor-fundo: rgb(19, 16, 16);
     --cor-primaria: rgb(17, 138, 48);
     --cor-rodape: rgb(22, 93, 105);
 
-    
-    
-   
     
     
 
@@ -35,7 +32,7 @@ body{
 }
 #corpo{
     
-    background-color: var(--cor-back);
+    background-color: var( --cor-hover);
     position: absolute;
     width: 90%;
     height: 100vh;
@@ -44,6 +41,7 @@ body{
 
 }
 #logog{
+    display: block;
     max-width: 250px;
       
 }
@@ -73,10 +71,18 @@ a{
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    background-color: rgb(42, 123, 148);
-    box-shadow: 1px 5px 50px rgb(111, 122, 124);
+    background-color: var(--cor-top);
+    box-shadow: 1px 5px 50px rgb(94, 180, 196);
 }
-.card-body{
+.card-body h5{
     color: var(--cor-texto);
+   ;
     
 }
+.card-body {
+    color: var(--cor-back);
+    
+    
+}
+
+

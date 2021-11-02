@@ -9,12 +9,12 @@ body, ul, li, p{
     font-family: Arial, Helvetica,serif;   
 }
 :root{
-    --cor-top: rgb(72, 171, 189);
+    --cor-top: rgb(56, 100, 143);
     --cor-back: rgb(255, 255, 255);
     --cor-texto: rgb(255, 255, 255);
-    --cor-hover: rgb(42, 123, 148);
+    --cor-hover: rgb(136, 167, 199);
     --cor-fundo: rgb(19, 16, 16);
-    --cor-primaria: rgb(17, 138, 48);
+    --cor-primaria: rgb(74, 126, 179);
     --cor-rodape: rgb(22, 93, 105);
 
     
@@ -134,6 +134,35 @@ a{
 .contato ul ul li a{
     display: block; 
 }
+
+
+#darkmode:checked + #corpo{
+    --cor-top: rgb(136, 136, 136);
+    --cor-back: rgb(151, 144, 144);
+    --cor-texto: rgb(255, 255, 255);
+    --cor-hover: rgb(136, 199, 180);
+    --cor-fundo: rgb(111, 125, 146);
+    --cor-primaria: rgb(74, 179, 105);
+    --cor-rodape: rgb(39, 105, 22);
+   /*
+    transition: .5 ease-in-out ;
+    */
+
+}
+#darkmode:checked + #corpo .darkmodelabel::after{
+    content: ' on';
+
+}
+.darkmodelabel{
+    cursor: pointer;
+}
+.darkmodelabel:hover{
+    color: var(--cor-texto);
+}
+.darkmodelabel::after{
+    content: ' off';
+}
+
 
 
 
