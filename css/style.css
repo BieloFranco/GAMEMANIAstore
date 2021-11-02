@@ -43,6 +43,16 @@ body{
     
 
 }
+#corpoq{
+    
+    background-color: var(--cor-back);
+    position: absolute;
+    width: 90%;
+    height: 100vh;
+    margin: 0% 0% 0% 1%;
+    
+
+}
 #logog{
     max-width: 250px;
       
@@ -149,7 +159,24 @@ a{
     */
 
 }
+#darkmode:checked + #corpoq{
+    --cor-top: rgb(136, 136, 136);
+    --cor-back: rgb(151, 144, 144);
+    --cor-texto: rgb(255, 255, 255);
+    --cor-hover: rgb(136, 199, 180);
+    --cor-fundo: rgb(111, 125, 146);
+    --cor-primaria: rgb(74, 179, 105);
+    --cor-rodape: rgb(39, 105, 22);
+   /*
+    transition: .5 ease-in-out ;
+    */
+
+}
 #darkmode:checked + #corpo .darkmodelabel::after{
+    content: ' on';
+
+}
+#darkmode:checked + #corpoq .darkmodelabel::after{
     content: ' on';
 
 }
@@ -419,6 +446,18 @@ img{
 }
 .rodapequem ul li a{
     width: 100px;
+}
+
+#corpoq{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-snap-align: start
+}
+.section1{
+    ;
+}
+.section2{
+    scroll-snap-align: ;
 }
 
 
