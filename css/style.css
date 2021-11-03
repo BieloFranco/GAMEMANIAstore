@@ -12,7 +12,7 @@ body, ul, li, p{
     --cor-top: rgb(56, 100, 143);
     --cor-back: rgb(255, 255, 255);
     --cor-texto: rgb(255, 255, 255);
-    --cor-hover: rgb(136, 167, 199);
+    --cor-hover: rgb(179, 136, 199);
     --cor-fundo: rgb(19, 16, 16);
     --cor-primaria: rgb(74, 126, 179);
     --cor-rodape: rgb(22, 93, 105);
@@ -34,11 +34,11 @@ body{
     
 }
 #corpo{
-    
+    border: 1px solid cornflowerblue;
     background-color: var(--cor-back);
     position: absolute;
     width: 90%;
-    height: 100vh;
+    height: 106,5vh;
     margin: 0% 0% 0% 1%;
     
 
@@ -318,6 +318,7 @@ img{
     display: block;
 }
 .flex{
+    border: 1px solid cornflowerblue;
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -326,20 +327,26 @@ img{
     text-align: center;
 }
 .flex > div{
-    flex: 1 1 200px;
-    margin: 10px;
+    flex: 1 1 300px;
+    margin: 50px;
+    max-width: 300px;
 
 }
 
 .rodape{
     background-color: var(--cor-fundo);
-    display: block;
+    display: flex;
     padding: 10px;
-    
+    justify-content: space-between;
+    flex-direction: row;
+  
 }
 .rodape img{
     padding: 5% 40%;
-    width: 20%;
+    width: 100%;
+    
+    
+    
 
     
 }
@@ -397,7 +404,7 @@ img{
 .backquem section:nth-of-type(1){
 
     background-image: url("/image/game.png");
-    height: 600px;
+    height: 90vh;
 
 }
 .backquem section:nth-of-type(3){
@@ -407,17 +414,17 @@ img{
 }
 .backquem section:nth-of-type(5){
     background-image: url("/image/game.png");
-    height: 600px;
+    height: 90vh;
 }
 .backquem section:nth-of-type(7){
     background-image: url("/image/mvv.png");
-    height: 600px;
+    height: 90vh;
     padding-bottom: 200px;
 }
 
 .backquem section:nth-of-type(9){
     background-image: url("/image/map.png");
-    height: 300px;
+    height: 45vh;
 }
 
 /*textos*/
@@ -432,6 +439,7 @@ img{
 .backquem section:nth-of-type(4){
     background-color: var(--cor-fundo);
 }
+
 .backquem section:nth-of-type(6){
     background-color: var(--cor-fundo);
 }
@@ -451,14 +459,17 @@ img{
 #corpoq{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scroll-snap-align: start
+    scroll-snap-align: start 
 }
-.section1{
-    ;
+#logoq{
+    position: absolute;
+    padding-left: 50vh;
+    width: 30vh;
 }
-.section2{
-    scroll-snap-align: ;
+.endquem:hover{
+    color: var(--cor-hover);
 }
+
 
 
 
