@@ -325,12 +325,19 @@ img{
     margin: 0 auto;
     padding: 100px;
     text-align: center;
+    
 }
 .flex > div{
     flex: 1 1 300px;
     margin: 50px;
-    max-width: 300px;
+    color: violet;
+    
 
+}
+.flex div img{
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .rodape{
@@ -342,6 +349,7 @@ img{
   
 }
 .rodape img{
+    display: block;
     padding: 5% 40%;
     width: 100%;
     
