@@ -16,12 +16,9 @@ body, ul, li, p{
     --cor-fundo: rgb(19, 16, 16);
     --cor-primaria: rgb(74, 126, 179);
     --cor-rodape: rgb(22, 93, 105);
-
-    
-    
-   
-    
-    
+    --cor-teste: rgb(45, 186, 211);
+    --cor-hover2: rgb(255, 255, 255);
+    --cor-borda: rgb(255, 255, 255);
 
 }
 body{
@@ -30,11 +27,11 @@ body{
     width: 100%;
     height: 100vh;
     justify-content: center;
-    background-color: var(--cor-back);
+    background-color: var(--cor-top);
     
 }
 #corpo{
-    border: 1px solid cornflowerblue;
+   
     background-color: var(--cor-back);
     position: absolute;
     width: 90%;
@@ -55,13 +52,21 @@ body{
 }
 #logog{
     max-width: 250px;
+    
       
 }
+#logog:hover{
+    
+    filter: brightness(115%);
+      
+}
+
 
 a{
     text-decoration: none;
     color: var(--cor-texto);
 }
+
 .header{
     height: 150px;
     background-color: var(--cor-top);
@@ -93,7 +98,7 @@ a{
     background-color: var(--cor-hover);
 }
 
-.contato a{
+.conta{
     background-color: var(--cor-fundo);
     width: 80px;
     border-radius: 10px;
@@ -142,6 +147,16 @@ a{
    
 }
 .contato ul ul li a{
+    color: rgb(0, 0, 0);
+    padding: 0;
+   
+}
+.contato ul ul li a:hover{
+    color: var(--cor-hover2);
+    padding: 0;
+   
+}
+.contato ul ul li a{
     display: block; 
 }
 
@@ -154,6 +169,7 @@ a{
     --cor-fundo: rgb(111, 125, 146);
     --cor-primaria: rgb(74, 179, 105);
     --cor-rodape: rgb(39, 105, 22);
+    --cor-borda: rgb(151, 144, 144);
    /*
     transition: .5 ease-in-out ;
     */
@@ -167,6 +183,7 @@ a{
     --cor-fundo: rgb(111, 125, 146);
     --cor-primaria: rgb(74, 179, 105);
     --cor-rodape: rgb(39, 105, 22);
+    --cor-borda: rgb(151, 144, 144);
    /*
     transition: .5 ease-in-out ;
     */
@@ -197,8 +214,8 @@ a{
 
 
 .dp-menu ul{
-    padding: 0% 25%;
-    
+    margin: auto;
+    padding: 0% 25%;   
     background-color: var(--cor-fundo);
   
 }
@@ -248,13 +265,14 @@ a{
 .search{
     
     height: 20px 20px;
-    border:1px solid;
+ 
     
     border-radius: 10px;
     padding: 0px;
 
 }
 .search input, .search button{
+    
     height: 20px 20px;
     font-size: 18px;
     border: none;
@@ -265,6 +283,7 @@ a{
 
 }
 .search button{
+    
     display: block;
     cursor: pointer;
     background: one;
@@ -318,6 +337,8 @@ img{
     display: block;
 }
 .flex{
+
+    object-fit: cover;
     border: 1px solid cornflowerblue;
     display: flex;
     flex-wrap: wrap;
@@ -328,15 +349,28 @@ img{
     
 }
 .flex > div{
-    flex: 1 1 300px;
-    margin: 50px;
-    color: violet;
     
+    object-fit: cover;
+    border: 1px solid var(--cor-borda);
+    flex: 1 1 200px;
+    margin: 50px;
 
 }
+
+.flex a{
+    
+    color: rgb(0, 0, 0);
+    
+}
+.flex a:hover{
+    
+    color: rgb(0, 47, 255);
+    
+}
+
 .flex div img{
-    min-width: 100%;
-    max-width: 100%;
+    
+    width: 100%;
     object-fit: cover;
 }
 
@@ -412,16 +446,19 @@ img{
 .backquem section:nth-of-type(1){
 
     background-image: url("/image/game.png");
+    opacity: 50%;
     height: 90vh;
 
 }
 .backquem section:nth-of-type(3){
+    opacity: 50%;
     background-image: url("/image/game.png");
     
     
 }
 .backquem section:nth-of-type(5){
     background-image: url("/image/game.png");
+    opacity: 50%;
     height: 90vh;
 }
 .backquem section:nth-of-type(7){
@@ -473,6 +510,11 @@ img{
     position: absolute;
     padding-left: 50vh;
     width: 30vh;
+}
+#logoq:hover{
+    
+    filter: brightness(115%);
+      
 }
 .endquem:hover{
     color: var(--cor-hover);

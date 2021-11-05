@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Documents\\SENAI-LOGICA-PROGRAMACAO\\resolucao-problemas"
+		},
+		{
+			"path": "..\\ativides front end\\Projeto_game_mania"
+		},
+		{
+			"path": "..\\ativides front end\\exercicios html"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GAMEMANIAstore"
+	}
+}
