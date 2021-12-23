@@ -12,11 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
         
 </head>
-<body>
+<body name="body">
 
     <input type="checkbox" name="darkmode" id="darkmode">
     
-    <div id="corpo">
+    <div id="corpo" >
         
         <header class="header">
 
@@ -40,7 +40,7 @@
                         
                         <li>
                             
-                            <label class="darkmodelabel" for="darkmode">Darkmode</label>
+                            <label class="darkmodelabel" for="darkmode" name="darkmode">Darkmode</label>
                         </li>
                     </ul>
                     </div>
@@ -203,10 +203,46 @@
 
         </footer>
 
+        <div id='modal-promocao' class='modal-container mostrar'>
+
+            <div class="modal">
+                <button class="fechar">
+                    X
+                </button>
+                <h3 class="subtitulo">Receba nossas novidades no seu Email</h3>
+                
+                <form>
+                    <input type="text" class="input" placeholder="Email">
+                    <input type="button" class="button" value="cadastrar"  >
+                    
+                </form>
+    
+            </div>
+            <br> <br> teste <br>
+    
+    
+        </div>
+
             
     </div>
 
+    
+    <script src="index.js"></script>
     <script>
+        
+        function iniciaModal (modalID) {
+        const modal = document.getElementByID (modalID);
+        modal.classList.add('mostrar')
+        modal.addEventListener('click', () =>{
+            console.log('clicou modal')
+        })
+
+        }
+        const logo = document.querySelector('.logog')
+        logo.addEventListener('click', function() {
+        iniciaModal('modal-promocao');
+
+        })
 
         const scrollWheel = event => {
                 if(event.deltaY < 0){
